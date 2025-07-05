@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const mongoose = require("mongoose");
+const Test = require("./test.model"); // <-- đường dẫn đúng tới file test.model.js
+
 const mongooseUrl =
   process.env.MONGOOSE || "mongodb://14.225.217.120:27017/day3api";
 mongoose
